@@ -112,18 +112,35 @@ OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı ye
 */
 
 function oyun(oyuncu, bilgisayar){
- let oyuncu='Taş'
- if(bilgisayar='Makas'){
-  console.log("Kazandın!")
+ if(oyuncu='Taş'){
+  if(bilgisayar='Makas'){
+   return "Kazandın!"
+  } else if(bilgisayar='Kağıt'){
+   return "Kaybettin!"
+  } else if(bilgisayar='Taş'){
+   return "Beraberlik"
+  }
  }
- else(bilgisayar='Kağıt'){
-  console.log("Kaybettin!")
+ if(oyuncu='Makas'){
+  if(bilgisayar='Kağıt'){
+    return "Kazandın!"
+  } else if(bilgisayar='Taş'){
+    return "Kaybettin!"
+  } else if(bilgisayar='Makas'){
+    return "Beraberlik"
+  }
  }
- else(bilgisayar='Taş'){
-  console.log("Beraberlik")
+ if(oyuncu='Kağıt'){
+  if(bilgisayar='Taş'){
+    return "Kazandın!"
+  } else if(bilgisayar='Makas'){
+    return "Kaybettin!"
+  } else if(bilgisayar='Kağıt'){
+    return "Beraberlik"
+  }
  }
- }
-
+}
+console.log(oyun('Taş','Kağıt'))
 // Şimdi Taş, Kağıt, Makas oyununu bilgisayara karşı oynayalım!
 /*
 Öncelikle aşağıdakileri yapın:
