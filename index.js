@@ -20,7 +20,13 @@ Aşağıdakileri yapın:
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
 
-
+let surucuYasi=34
+if(surucuYasi>18){
+  console.log(true)
+}
+else{
+  console.log(false)
+}
 
 /*
 Görev 1b - Değerler (puanlamaya dahil değildir)
@@ -34,7 +40,12 @@ Aşağıdakileri yapınız:
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
 
-
+let birinciDeger= 45;
+let ikinciDeger= 30;
+if(birinciDeger > ikinciDeger){
+  birinciDeger +=20
+}
+console.log(birinciDeger)
 
 
 
@@ -49,7 +60,9 @@ Aşağıdakileri yapın:
    İPUCU: Number metoduna bakabilirsin
 */
 
-
+let yil='1999'
+let yil1=Number(yil)
+console.log(yil1)
 
 
 /*
@@ -61,10 +74,10 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamlayın:
    3. console.log(carpma(7,4)) ile yazdığınız fonsiyonu test edin. Console'da sonucu 28 olarak görmelisiniz.
 */
 
-function carpma(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function carpma(a, b){
+  return a*b
 }
-
+console.log(carpma(3,3))
 
 
 
@@ -77,9 +90,10 @@ Aşağıdakileri yapın:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function kopeginYasi(x){
+ return x*7
 }
+console.log(kopeginYasi(10))
 
 
 
@@ -98,8 +112,17 @@ OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı ye
 */
 
 function oyun(oyuncu, bilgisayar){
-  /*buraya kodunu yazabilirsin*/
-}
+ let oyuncu='Taş'
+ if(bilgisayar='Makas'){
+  console.log("Kazandın!")
+ }
+ else(bilgisayar='Kağıt'){
+  console.log("Kaybettin!")
+ }
+ else(bilgisayar='Taş'){
+  console.log("Beraberlik")
+ }
+ }
 
 // Şimdi Taş, Kağıt, Makas oyununu bilgisayara karşı oynayalım!
 /*
