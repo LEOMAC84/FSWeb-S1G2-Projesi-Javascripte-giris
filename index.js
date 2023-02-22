@@ -229,10 +229,20 @@ Aşağdakileri notHesapla fonksiyonunda yapın.
  dönün
 */
 
-function notHesapla(){
-
-/*buraya kodunu yazabilirsin*/
+function notHesapla(not){
+  if (not<60){
+  return 'F aldın'
+  }else if (not<70){
+  return 'D aldın'
+  }else if (not<80){
+  return 'C aldın'
+  }else if (not<90){
+  return 'B aldın'
+  }else{
+  return 'A aldın'
+  }
 }
+console.log(notHesapla(100))
 
 
 
